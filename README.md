@@ -56,3 +56,7 @@ src/animations: efeitos de entrada.
 src/data: conteúdo editável e tipos.
 
 A ausência de nomes atuais, logos oficiais, patrocínios e ficha técnica está visível de forma intencional, conforme o pedido.
+
+## Prévia HTML local
+O arquivo index.html gerado na raiz pode ser aberto diretamente no navegador. Contém fotos, fontes, estilos e JavaScript incorporados. Para regenerar: node scripts/build-preview.mjs. Não precisa iniciar servidor. O artefato gerado fica fora do Git, e seu gerador está versionado.
+
