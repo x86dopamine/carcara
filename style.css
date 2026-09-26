@@ -1837,7 +1837,7 @@ html { scroll-padding-top: var(--header-height); }
   letter-spacing: 0;
   text-align: center;
 }
-.year-label { display: block; padding-bottom: 18px; }
+.year-label { display: block; padding-bottom: 18px; white-space: nowrap; }
 .years button .year-label::after { bottom: -1px; height: 2px; }
 .year-number {
   display: flex;
@@ -2065,6 +2065,7 @@ html { scroll-padding-top: var(--header-height); }
   font: 650 clamp(28px, 3vw, 46px)/1 Barlow, sans-serif;
   font-variant-numeric: lining-nums tabular-nums;
   letter-spacing: -.02em;
+  white-space: nowrap;
 }
 .year-story { align-self: center; }
 .year-story h3 { font-size: clamp(28px, 2.5vw, 40px); }
