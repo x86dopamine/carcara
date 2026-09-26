@@ -2087,7 +2087,8 @@ html { scroll-padding-top: var(--header-height); }
   .year-frame { padding: 6px; border-radius: 13px; }
   .year-frame::before { inset: 5px; border-radius: 8px; }
   .year-frame img { border-radius: 8px; }
-  .year-media figcaption { padding-top: 12px; }
+  .year-media figcaption { align-items: flex-start; flex-direction: column; gap: 5px; padding-top: 12px; }
+  .year-team-label { white-space: nowrap; font-size: 9px; letter-spacing: .08em; }
   .year-number { font-size: clamp(46px, 15vw, 70px); }
 }
 
