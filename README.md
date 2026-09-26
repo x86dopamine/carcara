@@ -1,6 +1,6 @@
 # Carcará Lux
 
-Abra `index.html` com dois cliques. O site funciona offline, sem servidor, instalação ou compilação. Mantenha `assets` junto de `index.html`, `style.css` e `script.js`.
+Para assistir aos episódios incorporados do Carcará Cast, abra abrir-site.bat. Ele inicia um servidor local e abre o site no navegador. O site precisa de internet para carregar os vídeos e as capas do YouTube. Para navegar sem vídeos, index.html também pode ser aberto com dois cliques.
 
 - `index.html`: conteúdo e estrutura.
 - `style.css`: layout responsivo, vidro e relevo 3D estático.
@@ -22,10 +22,10 @@ Ao finalizar a passagem, um evento de término desativa as animações do carro 
 
 
 
-A assinatura CARCARÁ LUX foi vetorizada da referência da equipe, sem o quadriculado, e recebe profundidade estática com duas camadas. A navegação usa botões escuros com detalhes laranja; Fale conosco abre o Instagram, e Explore a escuderia é um botão laranja. A fumaça utiliza cinco pequenos traços vetoriais que se dissipam, sem filtros.
+A assinatura CARCARÁ LUX foi vetorizada da referência da equipe, sem o quadriculado, e recebe profundidade estática com duas camadas. A navegação usa botões escuros com detalhes laranja; Fale conosco abre o Instagram. Instagram, YouTube e WhatsApp estão no rodapé.
 
 A assinatura da capa é exibida como um único SVG com letras, profundidade e margens incorporadas. O recorte anterior com máscaras foi removido; a entrada usa apenas opacidade e um deslocamento vertical curto.
 
 As letras repetidas da assinatura compartilham os mesmos contornos vetoriais, com curvas e linhas de base regulares. As seções usam vidro escuro em preto, grafite e laranja, com reflexos discretos; o blur de painéis é desativado nas telas menores. A fumaça tem camadas de gradientes suaves, animadas apenas em posição, escala e opacidade.
 
-A linha do tempo reúne as fotos das equipes de 2019, 2020, 2022, 2023, 2024 e 2025 em arquivos JPEG otimizados dentro de `assets/equipes`. Todas usam a mesma moldura 16:10, preservam a foto completa e participam da transição lateral entre os anos. 2021 foi removido por não ter participação durante a pandemia, e 2026 permanece fora da página até a chegada do registro da equipe.
+A trajetória está organizada em quatro temporadas bienais: 2019–2020, 2021–2022, 2023–2024 e 2025–2026. As fotos enviadas pela equipe identificam as duas primeiras gerações; as demais temporadas mantêm os registros já disponíveis. A moldura fixa preserva a foto completa durante a transição entre temporadas.

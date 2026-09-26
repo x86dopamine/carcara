@@ -211,33 +211,33 @@
   const process = [
     {
       word: 'PERGUNTA',
-      eyebrow: 'A CURIOSIDADE ACENDE O PROJETO.',
+      eyebrow: 'PRIMEIRO, A GENTE ENTENDE O DESAFIO.',
       title: 'TUDO COMEÇA COM UMA PERGUNTA.',
-      text: '',
+      text: 'Na STEM Racing, a equipe divide o trabalho entre engenharia, projeto do carro, comunicação, parcerias e apresentação. Tudo começa por entender o desafio da temporada.',
     },
     {
       word: 'IDEIA',
-      eyebrow: 'DA PERGUNTA NASCE UMA IDEIA.',
+      eyebrow: 'A EQUIPE PESQUISA E ESCOLHE UM CAMINHO.',
       title: 'E se a gente\ntentasse diferente?',
-      text: 'Observar, trocar ideias e explorar possibilidades. Antes do primeiro desenho, existe a curiosidade que coloca o projeto em movimento.',
+      text: 'A gente pesquisa, troca ideias e escolhe o que faz sentido para o carro e para a temporada. Depois, começa a desenhar.',
     },
     {
       word: 'FORMA',
-      eyebrow: 'A IDEIA COMEÇA A TOMAR FORMA.',
+      eyebrow: 'DESENHO, AERODINÂMICA E REVISÃO.',
       title: 'Pensar cada detalhe.\nConectar cada escolha.',
-      text: 'O projeto aproxima forma e função. Design e aerodinâmica ajudam a transformar possibilidades em decisões que podem ser estudadas, comparadas e revistas.',
+      text: 'A gente desenha o carro, compara versões e ajusta a aerodinâmica antes de decidir o que vai para a fabricação.',
     },
     {
       word: 'AÇÃO',
-      eyebrow: 'DO DESENHO PARA A CONSTRUÇÃO.',
+      eyebrow: 'HORA DE FABRICAR E MONTAR.',
       title: 'Fazer é outra\nforma de aprender.',
-      text: 'É na construção que as ideias encontram novos desafios. Cuidado, trabalho em equipe e atenção ao acabamento fazem parte dessa passagem do projeto para a realidade.',
+      text: 'Com o desenho definido, chega a hora de fabricar, montar e revisar o carro. Cada pessoa cuida da sua etapa e acompanha o resultado.',
     },
     {
       word: 'CORRIDA',
-      eyebrow: 'CADA TENTATIVA ABRE UM CAMINHO.',
+      eyebrow: 'NA PISTA, A GENTE CONFERE O PROJETO.',
       title: 'Testar. Observar.\nTentar de novo.',
-      text: 'Comparar o que foi imaginado com o que acontece ajuda a encontrar o próximo passo. A evolução nasce da disposição de aprender com cada tentativa.',
+      text: 'A gente olha os tempos, confere o que funcionou e volta ao projeto para ajustar o que ainda pode melhorar. Testar também faz parte de construir o carro.',
     },
   ];
   const assemblyCounts = [0, 1, 3, 6, 8];
@@ -694,76 +694,48 @@
 
   const history = [
     {
-      year: '2019',
-      title: 'O primeiro registro da nossa trajetória.',
+      year: '2019-2020',
+      title: 'A primeira geração da Carcará Lux.',
       description:
-        'A formação de 2019 abre a memória visual da Carcará Lux e marca o início desta linha do tempo.',
+        'Foi nessa temporada que a Carcará Lux começou. A primeira geração levou para o projeto do carro uma preocupação que acompanharia a equipe: a preservação ambiental.',
       source: null,
-      location: 'Acervo da equipe',
-      image: 'assets/equipes/2019.jpg',
-      imageAlt: 'Equipe Carcará Lux em 2019',
+      location: 'Primeira temporada',
+      image: 'assets/equipes/2019-2020.png',
+      imageAlt: 'Primeira geração da equipe Carcará Lux, temporada 2019–2020',
     },
     {
-      year: '2020',
-      title: 'Nossa história já estava na pista.',
+      year: '2021-2022',
+      title: 'Uma nova geração volta à pista.',
       description:
-        'A Carcará Lux aparece no caderno oficial do Torneio SESI F1 in Schools, representando a SESI Escola São Gonçalo do Amarante.',
-      source: {
-        label: 'Caderno oficial SESI · p. 43',
-        url: 'https://static.portaldaindustria.com.br/media/filer_public/f4/60/f46062ed-6bc9-448e-9e6b-67c1c88ab794/festival_sesi_de_robotica_2020_-_caderno_de_resumos_-_final.pdf',
-      },
-      competition: 'Torneio SESI · F1 in Schools',
-      location: 'São Paulo, SP',
-      image: 'assets/equipes/2020.jpg',
-      imageAlt: 'Equipe Carcará Lux em 2020',
-    },
-    {
-      year: '2022',
-      title: 'Identidade potiguar. Palco nacional.',
-      description:
-        'A Confederação Brasileira de Automobilismo registra a SESI Carcará Lux entre as participantes da final nacional da F1 in Schools em São Paulo.',
+        'Depois de uma pausa, voltamos com uma nova geração. Refizemos o projeto do zero, com uma proposta mais digital, e chegamos à final nacional da F1 in Schools, em São Paulo.',
       source: {
         label: 'Confederação Brasileira de Automobilismo',
         url: 'https://www.cba.org.br/noticias/noticiasinfo/2230/f1-in-schools-disputa-final-em-sao-paulo',
       },
       competition: 'Final nacional · F1 in Schools',
       location: 'São Paulo, SP',
-      image: 'assets/equipes/2022.jpg',
-      imageAlt: 'Equipe Carcará Lux em 2022',
+      image: 'assets/equipes/2021-2022.png',
+      imageAlt: 'Equipe Carcará Lux na temporada 2021–2022',
     },
     {
-      year: '2023',
-      title: 'O próximo desafio: Brasília.',
+      year: '2023-2024',
+      title: '7º carro mais veloz do Brasil.',
       description:
-        'A equipe integra a delegação do Rio Grande do Norte na F1 in Schools durante o Festival SESI de Robótica, de 15 a 18 de março.',
+        'Na temporada 2023–2024, nosso carro ficou em 7º lugar entre os mais velozes do Brasil. A equipe também destacou o planejamento e a organização do projeto social daquele ano.',
       source: {
-        label: 'FIERN · 14 mar. 2023',
-        url: 'https://www2.fiern.org.br/sesi-escola-rn-participa-de-15-a-18-de-marco-da-maior-competicao-de-robotica-educacional-do-brasil/',
+        label: 'Site oficial anterior da equipe',
+        url: 'https://carcaralux.wixsite.com/site-oficial',
       },
-      competition: 'Festival SESI de Robótica · F1 in Schools',
-      location: 'Brasília, DF',
-      image: 'assets/equipes/2023.jpg',
-      imageAlt: 'Equipe Carcará Lux em 2023',
-    },
-    {
-      year: '2024',
-      title: 'Uma história em evolução.',
-      description:
-        'Mais um capítulo no Festival SESI de Educação, em Brasília. A participação da Carcará Lux na F1 in Schools está registrada na delegação oficial do SESI-RN.',
-      source: {
-        label: 'FIERN · 27 fev. 2024',
-        url: 'https://www2.fiern.org.br/sesi-escola-rn-participa-festival-sesi-de-educacao-e-torneio-de-robotica-em-brasilia/',
-      },
-      competition: 'Festival SESI de Educação · F1 in Schools',
-      location: 'Brasília, DF',
+      competition: 'F1 in Schools · Projeto social',
+      location: 'Brasil',
       image: 'assets/equipes/2024.jpg',
-      imageAlt: 'Equipe Carcará Lux em 2024',
+      imageAlt: 'Equipe Carcará Lux na temporada 2023–2024',
     },
     {
-      year: '2025',
-      title: 'Velocidade que deixa marca.',
+      year: '2025-2026',
+      title: 'Terceiro carro mais veloz.',
       description:
-        'No Festival SESI de Robótica em São Paulo, a Carcará Lux conquista o terceiro carro mais veloz da F1 in Schools. Um resultado de velocidade, registrado pela FIERN.',
+        'Em 2025, nosso carro ficou entre os três mais velozes da F1 in Schools no Festival SESI de Robótica. É o resultado de pista desta temporada.',
       source: {
         label: 'FIERN · 17 mar. 2025',
         url: 'https://www.fiern.org.br/equipes-das-escolas-sesi-rio-grande-norte-se-destacam-em-torneio-nacional-de-robotica/',
@@ -771,7 +743,7 @@
       competition: 'Festival SESI de Robótica · F1 in Schools',
       location: 'São Paulo, SP',
       image: 'assets/equipes/2025.jpg',
-      imageAlt: 'Equipe Carcará Lux em 2025',
+      imageAlt: 'Equipe Carcará Lux na temporada 2025–2026',
     },
   ];
   const yearPanel = document.getElementById('year-panel');
@@ -780,7 +752,8 @@
     const image = new Image();
     image.src = item.image;
   });
-  let displayedYear = Number(yearPanel.getAttribute('aria-labelledby').replace('year-', ''));
+  const initialYearTab = document.getElementById(yearPanel.getAttribute('aria-labelledby'));
+  let displayedYear = history.findIndex(item => item.year === initialYearTab.dataset.year);
   let yearChanging = false;
   let queuedYear = null;
   function renderYear(item, button) {
@@ -806,7 +779,7 @@
     const item = history.find(year => year.year === button.dataset.year);
     if (!item) return;
     if (yearChanging) { queuedYear = button; return; }
-    const nextYear = Number(item.year);
+    const nextYear = history.indexOf(item);
     if (nextYear === displayedYear) return;
     if (!yearContents.every(element => typeof element.animate === 'function')) {
       renderYear(item, button);
