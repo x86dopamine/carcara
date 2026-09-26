@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Carcará Lux. Uma escuderia potiguar de STEM Racing, movida por engenharia, criatividade e trabalho em equipe.">
+  <title>Carcará Lux — O nosso próximo voo</title>
+  <link rel="icon" href="assets/simbolo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/modelo-carro-data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#principal">Pular para o conteúdo</a>
+<header class="header">
+  <div class="header-race" aria-hidden="true"><div class="header-racer"><div class="car-smoke"><i></i><i></i><i></i><i></i><i></i></div><img src="assets/carro-carcara.svg" width="310" height="92" alt=""></div></div>
+  <a class="brand" href="#inicio" aria-label="Carcará Lux, início"><img src="assets/logo.svg" width="150" height="102" alt="Carcará Lux"></a>
+  <nav class="navigation" id="menu" aria-label="Navegação principal">
+    <a href="#escuderia">Escuderia<span>01</span></a>
+    <a href="#engenharia">Engenharia<span>02</span></a>
+    <a href="#historia">Trajetória<span>03</span></a>
+    <a href="#contato">Conexões<span>04</span></a>
+  </nav>
+  <a class="header-social" href="https://www.instagram.com/carcaralux/" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo Instagram">Fale conosco</a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span></button>
+</header>
+<main id="principal">
+  <section class="hero" id="inicio" aria-labelledby="hero-title">
+    <div class="hero-atmosphere" aria-hidden="true"><div class="hero-glow"></div><div class="glass-ribbon ribbon-one"></div><div class="glass-ribbon ribbon-two"></div></div>
+    <div class="hero-top"><span class="eyebrow"><i class="status-dot"></i> CARCARÁ LUX / STEM RACING</span><span class="eyebrow">RIO GRANDE DO NORTE, BRASIL</span></div>
+    <div class="brand-stage" id="brand-stage">
+      <div class="emblem-space" role="img" aria-label="Símbolo da ave Carcará em relevo 3D"><div class="emblem-float"><div class="emblem-spin"><span class="bird-layer bird-back"></span><span class="bird-layer bird-middle"></span><span class="bird-layer bird-front"></span></div></div></div>
+    </div>
+    <div class="hero-message"><h1 id="hero-title"><span class="title-roll wordmark"><img src="assets/assinatura.svg" width="658" height="192" alt="Carcará Lux"></span></h1><a class="hero-cta" href="#escuderia">Explore a escuderia</a></div>
+  </section>
+
+  <section class="identity" id="escuderia" aria-labelledby="identity-title">
+    <div class="section-index"><span>01 / A ESCUDERIA</span><span>IDENTIDADE POTIGUAR</span></div>
+    <div class="identity-grid">
+      <h2 id="identity-title" class="reveal">O NOME<br>É DA TERRA.<br><span>O OLHAR,<br>DO FUTURO.</span></h2>
+      <div class="identity-copy reveal"><p class="lead">A gente não nasceu<br>para ficar no mesmo lugar.</p><p>A Carcará Lux leva o Rio Grande do Norte para a STEM Racing. Aqui, criatividade e engenharia encontram gente disposta a perguntar, experimentar e construir junto.</p><p>O carcará está no nosso nome e no nosso símbolo. É dessa origem que vem a nossa vontade de explorar o próximo desafio.</p><a class="underline-link" href="https://www.instagram.com/carcaralux/" target="_blank" rel="noopener noreferrer">Acompanhe a equipe</a></div>
+    </div>
+    <div class="identity-strip reveal" aria-label="Criatividade, engenharia e equipe"><span>CRIATIVIDADE</span><i aria-hidden="true">+</i><span>ENGENHARIA</span><i aria-hidden="true">+</i><span>EQUIPE</span></div>
+  </section>
+
+  <section class="engineering" id="engenharia" aria-labelledby="engineering-title">
+    <div class="section-index"><span>02 / DO PENSAMENTO À PISTA</span><span>UM PROJETO. MUITAS PERSPECTIVAS.</span></div>
+    <div class="engineering-top reveal"><h2 id="engineering-title" class="reveal">PEQUENO NA ESCALA.<br><span>GRANDE NAS IDEIAS.</span></h2><p>O que faz um carro vai muito além da forma.<br>Explore as etapas que conectam uma ideia à pista.</p></div>
+    <div class="process-layout reveal">
+      <div class="process-visual is-intro" aria-hidden="true"><canvas class="assembly-canvas" id="assembly-canvas"></canvas><img class="assembly-intro-logo" src="assets/logo.svg" width="150" height="102" alt=""><span class="assembly-hint">ARRASTE PARA GIRAR</span></div>
+      <div class="process-interaction"><div class="process-tabs" role="tablist" aria-label="Etapas do projeto"><button role="tab" id="tab-question" aria-controls="process-panel" aria-selected="true" data-stage="0">01 <span>Perguntar</span></button><button role="tab" id="tab-idea" aria-controls="process-panel" aria-selected="false" tabindex="-1" data-stage="1">02 <span>Conceber</span></button><button role="tab" id="tab-design" aria-controls="process-panel" aria-selected="false" tabindex="-1" data-stage="2">03 <span>Projetar</span></button><button role="tab" id="tab-build" aria-controls="process-panel" aria-selected="false" tabindex="-1" data-stage="3">04 <span>Construir</span></button><button role="tab" id="tab-test" aria-controls="process-panel" aria-selected="false" tabindex="-1" data-stage="4">05 <span>Evoluir</span></button></div>
+      <div class="process-panel is-question" id="process-panel" role="tabpanel" aria-labelledby="tab-question" tabindex="0"><span class="eyebrow" id="process-eyebrow">A CURIOSIDADE ACENDE O PROJETO.</span><h3 id="process-title">TUDO COMEÇA COM UMA PERGUNTA.</h3><p id="process-description"></p></div><span class="process-caption">Da primeira pergunta ao próximo teste.</span></div>
+    </div>
+  </section>
+
+  <section class="history" id="historia" aria-labelledby="history-title">
+    <div class="section-index"><span>03 / MEMÓRIA EM MOVIMENTO</span><span>O CAMINHO TAMBÉM NOS DEFINE.</span></div>
+    <div class="history-heading reveal"><h2 id="history-title" class="reveal">CADA ANO,<br><span>UMA NOVA PARTIDA.</span></h2><p>Escolha um ano.<br>Conheça um capítulo do nosso percurso.</p></div>
+    <div class="years reveal" role="tablist" aria-label="Anos da Carcará Lux"><button role="tab" id="year-2019" aria-controls="year-panel" aria-selected="false" tabindex="-1" data-year="2019"><span class="year-label">2019</span></button><button role="tab" id="year-2020" aria-controls="year-panel" aria-selected="false" tabindex="-1" data-year="2020"><span class="year-label">2020</span></button><button role="tab" id="year-2022" aria-controls="year-panel" aria-selected="false" tabindex="-1" data-year="2022"><span class="year-label">2022</span></button><button role="tab" id="year-2023" aria-controls="year-panel" aria-selected="false" tabindex="-1" data-year="2023"><span class="year-label">2023</span></button><button role="tab" id="year-2024" aria-controls="year-panel" aria-selected="false" tabindex="-1" data-year="2024"><span class="year-label">2024</span></button><button role="tab" id="year-2025" aria-controls="year-panel" aria-selected="true" data-year="2025"><span class="year-label">2025</span></button></div>
+    <div class="year-panel reveal" id="year-panel" role="tabpanel" aria-labelledby="year-2025" tabindex="0">
+      <figure class="year-media">
+        <div class="year-frame">
+          <img id="year-image" src="assets/equipes/2025.jpg" alt="Equipe Carcará Lux em 2025" width="1600" height="1000">
+        </div>
+        <figcaption><span class="year-number" id="year-number">2025</span><span>CARCARÁ LUX · EQUIPE</span></figcaption>
+      </figure>
+      <div class="year-story"><span class="eyebrow" id="year-location">SÃO PAULO, SP</span><h3 id="year-title">Velocidade que deixa marca.</h3><p id="year-description">No Festival SESI de Robótica em São Paulo, a Carcará Lux conquista o terceiro carro mais veloz da F1 in Schools. Um resultado de velocidade, registrado pela FIERN.</p></div>
+    </div>
+    <div class="result reveal"><span class="result-rank"><span class="result-digit">3</span><span class="result-ordinal">º</span></span><div><span class="eyebrow">SÃO PAULO / 2025</span><h3>CARRO MAIS VELOZ</h3><p>F1 in Schools · Festival SESI de Robótica.<br>Resultado de velocidade, não de classificação geral.</p></div><a class="result-link" href="https://www.fiern.org.br/equipes-das-escolas-sesi-rio-grande-norte-se-destacam-em-torneio-nacional-de-robotica/" target="_blank" rel="noopener noreferrer">Ver resultado oficial</a></div>
+  </section>
+
+  <section class="connections project-feature" id="projeto" aria-labelledby="project-title">
+    <div class="section-index"><span>04 / PROJETO EM MOVIMENTO</span><span>MULHERES TAMBÉM NA INDÚSTRIA.</span></div>
+    <div class="impact-row reveal"><span class="impact-tag" id="project-title">ACELERANDO<br>COM ELAS.</span><p>A voz da equipe também chega fora da pista. Com o projeto Acelerando com Elas, integrantes participaram da conversa sobre a presença de mulheres na indústria.</p><a class="impact-link" href="https://www3.fiern.org.br/da-formacao-ao-chao-de-fabrica-diretora-senai-destaca-acoes-para-ampliar-presenca-da-mulher-na-industria/" target="_blank" rel="noopener noreferrer">Conheça o projeto</a></div>
+  </section>
+
+  <section class="sponsors" id="parceiros" aria-labelledby="sponsors-title">
+    <div class="section-index"><span>05 / PARCEIROS DA EQUIPE</span><span>MARCAS QUE ACELERAM COM A GENTE.</span></div>
+    <div class="sponsors-heading"><h2 id="sponsors-title">PATROCINADORES<br><span>CARCARÁ LUX.</span></h2></div>
+    <ul class="sponsor-grid" aria-label="Marcas patrocinadoras da Carcará Lux">
+      <li class="sponsor-frame"><img src="assets/patrocinadores/doisa-engenharia.png" width="1512" height="2419" alt="SESI, SENAI, FIERN, Doisa Engenharia e Carcará Lux" loading="lazy" decoding="async"></li>
+      <li class="sponsor-frame"><img src="assets/patrocinadores/ravegreen.png" width="1512" height="2419" alt="SESI, SENAI, FIERN, Ravegreen e Carcará Lux" loading="lazy" decoding="async"></li>
+      <li class="sponsor-frame"><img src="assets/patrocinadores/laboratorio-manufatura-uern.png" width="1512" height="2419" alt="SESI, SENAI, FIERN, Laboratório de Manufatura da UERN e Carcará Lux" loading="lazy" decoding="async"></li>
+    </ul>
+  </section>
+
+  <section class="connections" id="contato" aria-labelledby="connections-title">
+    <div class="section-index"><span>06 / CONEXÕES</span><span>O FUTURO SE CONSTRÓI JUNTO.</span></div>
+    <div class="contact-main"><p class="eyebrow">PARCERIAS, IDEIAS E NOVOS CAMINHOS.</p><h2 id="connections-title" class="reveal">O PRÓXIMO VOO<br>PODE TER <span>VOCÊ.</span></h2><a class="button button-orange" href="https://www.instagram.com/carcaralux/" target="_blank" rel="noopener noreferrer">Converse com a Carcará</a></div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer-inner">
+    <a class="footer-brand" href="#inicio" aria-label="Carcará Lux, voltar ao início"><img src="assets/logo.svg" width="150" height="102" alt="Carcará Lux"></a>
+    <p class="footer-details"><span>STEM RACING</span><span>RIO GRANDE DO NORTE, BRASIL.</span></p>
+    <a class="footer-social" href="https://www.instagram.com/carcaralux/" target="_blank" rel="noopener noreferrer" aria-label="@carcaralux no Instagram">
+      <svg class="instagram-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle class="instagram-dot" cx="17.75" cy="6.5" r="1.1" />
+      </svg>
+    </a>
+  </div>
+</footer>
+<noscript><p class="no-script">As informações principais estão disponíveis. Ative o JavaScript para explorar as outras etapas e temporadas.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 658 192" role="img" aria-label="Carcará Lux">
+<defs>
+  <linearGradient id="metal" x1="0" y1="0" x2="0.3" y2="1"><stop stop-color="#ffc18b"/><stop offset=".3" stop-color="#ed813f"/><stop offset=".7" stop-color="#df6029"/><stop offset="1" stop-color="#f8a56b"/></linearGradient>
+  <path id="glyph-c" d="M35 19H89L85 35H41Q35 35 33 42L26 65Q24 74 33 74H74L70 90H24Q0 90 5 67L14 38Q20 19 35 19Z"/>
+<path id="glyph-a" d="M127 19H153L166 90H145L142 75H119L127 60H140L136 36L98 90H78Z"/>
+<path id="glyph-r" d="M193 19H246Q269 19 260 43Q256 58 240 63L253 90H232L219 65H200L193 90H173L184 49H233Q239 49 241 42Q245 35 238 35H189Z"/>
+<g id="letters">
+ <use href="#glyph-c"/><use href="#glyph-a"/><use href="#glyph-r"/>
+ <use href="#glyph-c" x="262"/><use href="#glyph-a" x="264"/><use href="#glyph-r" x="266"/><use href="#glyph-a" x="455"/>
+ <path d="M606 2H632L618 14H593Z"/>
+ <path d="M410 107H430L415 156H455L450 171H390Z"/>
+ <path d="M476 107H496L483 150Q480 157 488 157H506Q514 157 516 150L529 107H549L534 155Q529 171 513 171H477Q456 171 462 152Z"/>
+ <path d="M555 107H579L591 127L613 107H637L600 139L618 171H595L583 150L559 171H536L573 139Z"/>
+</g>
+</defs>
+<use href="#letters" fill="#71301a" transform="translate(2 4)"/>
+<use href="#letters" fill="#a44722" transform="translate(1 2)"/>
+<use href="#letters" fill="url(#metal)"/>
+<g fill="#e57036"><path d="M48 116h34l-2 21h-34z" opacity="0.12" transform="translate(0 0)"/><path d="M82 116h34l-2 21h-34z" opacity="0.21" transform="translate(0 21)"/><path d="M116 116h34l-2 21h-34z" opacity="0.30" transform="translate(0 0)"/><path d="M150 116h34l-2 21h-34z" opacity="0.38" transform="translate(0 21)"/><path d="M184 116h34l-2 21h-34z" opacity="0.47" transform="translate(0 0)"/><path d="M218 116h34l-2 21h-34z" opacity="0.56" transform="translate(0 21)"/><path d="M252 116h34l-2 21h-34z" opacity="0.65" transform="translate(0 0)"/><path d="M286 116h34l-2 21h-34z" opacity="0.74" transform="translate(0 21)"/><path d="M320 116h34l-2 21h-34z" opacity="0.82" transform="translate(0 0)"/><path d="M354 116h34l-2 21h-34z" opacity="0.91" transform="translate(0 21)"/></g>
+</svg>

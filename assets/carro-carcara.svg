@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 92">
+  <defs>
+    <linearGradient id="body" x2="0" y2="1">
+      <stop stop-color="#353639"/><stop offset=".45" stop-color="#151619"/><stop offset="1" stop-color="#07080a"/>
+    </linearGradient>
+    <linearGradient id="orange" x2=".7" y2="1">
+      <stop stop-color="#ffb061"/><stop offset=".45" stop-color="#ed692c"/><stop offset="1" stop-color="#b8340c"/>
+    </linearGradient>
+    <radialGradient id="tire"><stop stop-color="#4a4b4e"/><stop offset=".43" stop-color="#1d1e21"/><stop offset="1" stop-color="#08090b"/></radialGradient>
+  </defs>
+  <ellipse cx="156" cy="90" rx="143" ry="2" fill="#000" opacity=".3"/>
+  <path d="M28 22h15v44H30z" fill="#17181b" stroke="#68615a" stroke-width="1"/>
+  <path d="M15 19h48l-2 9H15z" fill="url(#orange)"/>
+  <path d="M17 30h43v5H17z" fill="#17181b"/>
+  <path d="M45 67l32-25 38-6 13-13h13l9 22 43 14 56 5 39 11-2 6H45z" fill="url(#body)" stroke="#665347" stroke-width="1"/>
+  <path d="M75 47l40-8 13-16h10l-1 20-29 13z" fill="url(#orange)"/>
+  <path d="M131 44c4-14 16-18 31-13l15 16" fill="none" stroke="#ee813f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M150 43l-2-12m-9 14h34" stroke="#323438" stroke-width="3"/>
+  <path d="M149 38a6 6 0 0 1 12 0v5h-12z" fill="#f0914a"/>
+  <path d="M79 58l87-8 34 14 40 4-12 10H86z" fill="url(#orange)"/>
+  <path d="M91 57l70-5 34 13-5 9H91z" fill="#141518"/>
+  <path d="M98 56l62-4 27 10" fill="none" stroke="#ffc08c" stroke-width="1" opacity=".7"/>
+  <text x="105" y="68" fill="#fff2df" font-family="Arial,sans-serif" font-size="10" font-weight="700" font-style="italic" letter-spacing=".3">CARCARÁ LUX</text>
+  <path d="M49 78h194l-6 6H48z" fill="#0a0b0d"/>
+  <path d="M262 75h36l3 7h-44z" fill="#e9682b"/>
+  <path d="M255 83h47v4h-50z" fill="#17181a"/>
+  <path d="M205 66l28 12m-24 0 24-12M57 62l27 12" stroke="#626366" stroke-width="2"/>
+  <g fill="url(#tire)" stroke="#343537" stroke-width="1.5">
+    <circle cx="63" cy="69" r="22"/><circle cx="240" cy="72" r="19"/>
+  </g>
+  <g fill="none" stroke="#ed792f" stroke-width="1.5">
+    <circle cx="63" cy="69" r="17.5"/><circle cx="240" cy="72" r="14.5"/>
+  </g>
+  <g fill="#424347" stroke="#797b7e" stroke-width="1">
+    <circle cx="63" cy="69" r="8"/><circle cx="240" cy="72" r="7"/>
+  </g>
+  <g fill="#ea7330"><circle cx="63" cy="69" r="2.5"/><circle cx="240" cy="72" r="2.5"/></g>
+</svg>
