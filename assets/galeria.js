@@ -96,7 +96,16 @@
 })();
 (() => {
   'use strict';
-  const episodes=['kXV5vYHVWt8','IU4CIfhr8aI','tpPznp2vVSw','-RUT4vEigG4','HD20rXSLbI8','SsfNqvOC3eg','qaSH7nnQnUM','-oMY9GhIxkc'];
+  const videos=[
+    {id:'kXV5vYHVWt8',title:'CarcaráCast EP 3 - Acelerando com Elas: histórias que inspiram dentro e fora da pista'},
+    {id:'IU4CIfhr8aI',title:'CarcaráCast EP 2 - Conhecendo a First Robotic Competition (FRC)- Carcará Lux'},
+    {id:'tpPznp2vVSw',title:'CarcaráCast EP1 - Protagonismo feminino dentro da FCR E STEM racing - Carcará Lux'},
+    {id:'-RUT4vEigG4',title:'🎙 Podcast Carcará Lux - Entrevista com a Engenheira'},
+    {id:'HD20rXSLbI8',title:'🎙Podcast Carcará Lux - Entrevista com o Projeto Social da equipe 🧏‍♂️'},
+    {id:'SsfNqvOC3eg',title:'🎙 Podcast Carcará Lux - Entrevista com Ex-Técnico'},
+    {id:'qaSH7nnQnUM',title:'🚀🎙️ A Escuderia Carcará-Lux, participou de uma entrevista incrível na Rádio 105 FM…'},
+    {id:'-oMY9GhIxkc',title:'🎙️ Podcast Carcará Lux - Especial com Ex-Integrante Luana'},
+  ];
   const dialog=document.getElementById('podcast-dialog');
   const opener=document.querySelector('.podcast-open');
   const close=document.getElementById('podcast-close');
@@ -104,47 +113,45 @@
   const viewer=document.getElementById('podcast-viewer');
   const frame=document.getElementById('podcast-player-frame');
   const title=document.getElementById('podcast-active-title');
-  const number=document.getElementById('podcast-active-number');
+  const seriesLabel=document.getElementById('podcast-active-series');
   const watchLink=document.getElementById('podcast-watch-link');
   const back=document.getElementById('podcast-back');
   if(!dialog||!opener||!grid||typeof dialog.showModal!=='function') return;
-  let lastEpisodeButton=null;
-  function stopEpisode(){frame.replaceChildren();viewer.hidden=true;grid.hidden=false;}
-  function playEpisode(videoId,episodeNumber,button){
-    lastEpisodeButton=button;grid.hidden=true;viewer.hidden=false;
-    const label=String(episodeNumber).padStart(2,'0');
-    title.textContent='Episódio '+label;
-    number.textContent='CARCARÁ CAST · EPISÓDIO '+label;
-    watchLink.href='https://www.youtube.com/watch?v='+videoId;
+  let lastVideoButton=null;
+  function stopVideo(){frame.replaceChildren();viewer.hidden=true;grid.hidden=false;}
+  function playVideo(video,button){
+    lastVideoButton=button;grid.hidden=true;viewer.hidden=false;
+    title.textContent=video.title;
+    seriesLabel.textContent='CARCARÁ CAST';
+    watchLink.href='https://www.youtube.com/watch?v='+video.id;
     const iframe=document.createElement('iframe');
-    iframe.src='https://www.youtube.com/embed/'+videoId+'?autoplay=1&playsinline=1&rel=0';
-    iframe.title='Carcará Cast, episódio '+label;
+    iframe.src='https://www.youtube.com/embed/'+video.id+'?autoplay=1&playsinline=1&rel=0';
+    iframe.title=video.title+' · Carcará Cast';
     iframe.allow='autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
     iframe.allowFullscreen=true;
     iframe.referrerPolicy='strict-origin-when-cross-origin';
     frame.replaceChildren(iframe);back.focus({preventScroll:true});
   }
-  episodes.forEach((videoId,index)=>{
-    const episodeNumber=index+1,label=String(index+1).padStart(2,'0');
+  videos.forEach(video=>{
     const item=document.createElement('li'),card=document.createElement('article'),button=document.createElement('button');
     const thumbnail=document.createElement('span'),image=document.createElement('img'),play=document.createElement('span'),caption=document.createElement('span');
     const footer=document.createElement('div'),series=document.createElement('span'),youtube=document.createElement('a');
     item.className='podcast-grid-item';card.className='podcast-card';
-    button.className='podcast-card-button';button.type='button';button.setAttribute('aria-label','Assistir Carcará Cast, episódio '+label);
-    thumbnail.className='podcast-thumbnail';image.src='https://i.ytimg.com/vi/'+videoId+'/hqdefault.jpg';image.alt='';image.loading='lazy';image.decoding='async';
+    button.className='podcast-card-button';button.type='button';button.setAttribute('aria-label','Assistir vídeo: '+video.title);
+    thumbnail.className='podcast-thumbnail';image.src='https://i.ytimg.com/vi/'+video.id+'/hqdefault.jpg';image.alt='';image.loading='lazy';image.decoding='async';
     play.className='podcast-play-icon';play.setAttribute('aria-hidden','true');
-    caption.className='podcast-thumbnail-label';caption.textContent='EPISÓDIO '+label;
-    thumbnail.append(image,play);button.append(thumbnail,caption);button.addEventListener('click',()=>playEpisode(videoId,episodeNumber,button));
+    caption.className='podcast-thumbnail-label';caption.textContent=video.title;
+    thumbnail.append(image,play);button.append(thumbnail,caption);button.addEventListener('click',()=>playVideo(video,button));
     footer.className='podcast-card-footer';series.textContent='CARCARÁ CAST';
-    youtube.href='https://www.youtube.com/watch?v='+videoId;youtube.target='_blank';youtube.rel='noopener noreferrer';
+    youtube.href='https://www.youtube.com/watch?v='+video.id;youtube.target='_blank';youtube.rel='noopener noreferrer';
     youtube.innerHTML='<svg class="youtube-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="youtube-mark" x="2" y="5" width="20" height="14" rx="4"></rect><path class="youtube-play" d="m10 8.5 5.7 3.5-5.7 3.5z"></path></svg><span>YouTube</span>';
     footer.append(series,youtube);card.append(button,footer);item.append(card);grid.append(item);
   });
-  opener.addEventListener('click',()=>{stopEpisode();dialog.showModal();close.focus({preventScroll:true});});
+  opener.addEventListener('click',()=>{stopVideo();dialog.showModal();close.focus({preventScroll:true});});
   close.addEventListener('click',()=>dialog.close());
-  back.addEventListener('click',()=>{stopEpisode();if(lastEpisodeButton)lastEpisodeButton.focus({preventScroll:true});});
+  back.addEventListener('click',()=>{stopVideo();if(lastVideoButton)lastVideoButton.focus({preventScroll:true});});
   dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
-  dialog.addEventListener('close',()=>{stopEpisode();opener.focus({preventScroll:true});});
+  dialog.addEventListener('close',()=>{stopVideo();opener.focus({preventScroll:true});});
 })();
 (() => {
   'use strict';

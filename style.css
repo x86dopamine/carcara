@@ -2270,7 +2270,7 @@ html { scroll-padding-top: var(--header-height); }
 .podcast-play-icon{position:absolute;top:50%;left:50%;width:48px;height:34px;border-radius:10px;background:#ff0033;box-shadow:0 3px 14px #0009;transform:translate(-50%,-50%);transition:transform .18s,background .18s}
 .podcast-play-icon::after{content:'';position:absolute;top:9px;left:20px;border-top:8px solid transparent;border-bottom:8px solid transparent;border-left:12px solid white}
 .podcast-card-button:hover .podcast-play-icon,.podcast-card-button:focus-visible .podcast-play-icon{background:#e5002e;transform:translate(-50%,-50%) scale(1.08)}
-.podcast-thumbnail-label{display:block;padding:11px 3px 3px;color:#f2d5c2;font:700 11px 'Courier New',monospace;letter-spacing:.08em}
+.podcast-thumbnail-label{display:block;min-height:3.9em;padding:11px 3px 3px;color:#f2d5c2;font:700 12px/1.35 Barlow,sans-serif;letter-spacing:0;overflow-wrap:anywhere}
 .podcast-card-footer{padding-top:8px}
 .podcast-card-footer a{display:inline-flex;align-items:center;gap:6px;color:#d8c8bd;font:11px Barlow,sans-serif}
 .podcast-card-footer .youtube-icon{width:19px;height:19px}
